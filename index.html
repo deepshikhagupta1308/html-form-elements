@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Register Form</title>
+        <style>
+            body {
+                text-align: center;
+                background-color: #6abadeba;
+            }
+            form {
+                background-color: lightgrey;
+                border: 2px solid rgb(74, 150, 74);
+                padding: 5px;
+                margin: 20px;
+                border-radius: 15px;
+            }
+            a {
+                color: rgb(66, 2, 243);
+            }
+            button[type=submit],input[type=reset] {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 10px 10px;
+            }
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            .form-input{
+                width: 300px;
+                height: 30px;
+                border: none;
+                border-radius: 3px;
+                padding-left: 8px;
+            }
+            textarea{
+                border: none;
+                border-radius: 3px;
+                padding-left: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Register Page</h2>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="fname"><b>First Name:</b></label>
+                    <input type="text" name="firstname" id="fname" value="" class="form-input" placeholder="Enter Your First Name">
+
+                    <label for="lname"><b>Last Name:</b></label>
+                    <input type="text" name="lastname" id="lname" value="" class="form-input" placeholder="Enter Your Last Name">
+                </div><br>
+                <div>
+                    <label for="number"><b>Phone Number:</b></label>
+                    <input type="text" name="number" id="number" value="" class="form-input" placeholder="Enter Your Phone Number">
+    
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" name="email" id="email" value="" class="form-input" placeholder="Enter Your Email">
+                </div><br>
+                <div>
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" name="password" id="password" value="" class="form-input" placeholder="Enter Password">
+    
+                    <label for="cpassword"><b>Confirm Password:</b></label>
+                    <input type="password" name="cpassword" id="cpassword" value="" class="form-input" placeholder="Confirm Password">
+                </div><br>
+                <div>
+                    <label for="city"><b>Select City:</b></label>
+                    <select name="city" id="city" class="form-input">
+                        <option value="">--Select--</option>
+                        <option value="indore">Indore</option>
+                        <option value="bhopal">Bhopal</option>
+                        <option value="ujjain">Ujjain</option>
+                        <option value="dewas">Dewas</option>
+                    </select>
+
+                    <input type="radio" name="gender" value="male">
+                    <label>Male:</label>
+                    <input type="radio"  name="gender" value="female">
+                    <label>Female:</label>
+                </div><br>
+                <div>
+                    <label for="address"><b>Address:</b></label>
+                    <textarea  name="" rows="10" cols="50" id="address" placeholder="Enter Your Address"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="terms" value="">
+                    <label>I agree all the Terms,Privacy Policy and Fees.</label>
+                </div>
+                <button type="submit">Create Account</button>
+                <input type="reset" value="Reset">
+                <div>
+                    Already have an account ? <a href="login.html" target="_blank">Login</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
